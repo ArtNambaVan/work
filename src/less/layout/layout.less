@@ -1,0 +1,31 @@
+.wrapper {
+  max-width: 86rem;
+  text-align: center;
+  margin: 3rem auto;
+  min-height: 66rem;
+  background: url(../images/main-product.png) no-repeat 110% center;
+  background-size: contain;
+}
+
+.caption--main {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.social {
+  display: flex;
+
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: @default-font-size;
+    color: var(--color-white);
+  }
+}

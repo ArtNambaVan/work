@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Cambria';
+  src: url('../fonts/Cambria-Bold.eot');
+  src: url('../fonts/Cambria-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Cambria-Bold.woff2') format('woff2'), url('../fonts/Cambria-Bold.woff') format('woff'), url('../fonts/Cambria-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+:root {
+  --color-white: #fff;
+  --color-red-dark: #bc0404;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.6;
+  font-family: "Cambria";
+  color: var(--color-white);
+  background-image: url(../images/background1366.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.3rem 2rem;
+  border: 1px solid var(--color-white);
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--color-white);
+}
+.wrapper {
+  max-width: 86rem;
+  text-align: center;
+  margin: 3rem auto;
+  min-height: 66rem;
+  background: url(../images/main-product.png) no-repeat 110% center;
+  background-size: contain;
+}
+.caption--main {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+.social {
+  display: flex;
+}
+.social__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.social__link {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: var(--color-white);
+}

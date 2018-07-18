@@ -1,0 +1,21 @@
+{
+  "name": "bear_project",
+  "version": "1.0.0",
+  "description": "bear project with only css and html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://vmgit.softwerke.local/frontend-practice-2018/klochkov-practice-2.git"
+  },
+  "author": "Artem Klochkov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.1"
+  },
+  "dependencies": {}
+}
