@@ -1,18 +1,41 @@
-.main {
-  border-bottom: 1px solid var(--color-border);
-}
+
 
 .main-container {
-  max-width: 86rem;
+ // max-width: 55%;
+  max-width: 60vw;
+
   text-align: center;
   margin: 0 auto;
-  background: url(../images/main-product.png) no-repeat right center;
-  background-size: 24rem;
-  height: 90vh;
+ // background: url(../images/main-product.png) no-repeat right center;
+  //background-size: 24rem;
+
+  margin-left: 15vw;
 
   /* & > * {
     max-width: 84%;
   } */
+}
+
+
+.navigation {
+  padding: 5vh 0;
+}
+
+.component {
+  position: relative;
+  padding: 0 15px;
+}
+
+.bottle-container {
+  position: absolute;
+  right: 10rem;
+  top: 2rem;
+}
+
+
+.bottle {
+  max-height: 77vh;
+  position: absolute;
 }
 
 .content-wrapper {
@@ -20,8 +43,10 @@
 }
 
 .caption--main {
-  font-size: 4.8rem;
+  font-size: @header-font-size;
   text-transform: uppercase;
+  margin-bottom: 5vh;
+  line-height: 1;
 }
 
 .main-wrapper {
@@ -35,7 +60,7 @@
 .text-info {
   font-size: @medium-font-size;
   text-transform: uppercase;
-  line-height: 1;
+  margin: 3vh 0;
 
   &--sub {
     display: block;
@@ -47,6 +72,7 @@
 .social {
   display: flex;
   justify-content: space-between;
+  margin: 5vh 0;
 
 
   &__container {
@@ -55,16 +81,19 @@
     justify-content: center;
     align-items: center;
     flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
   }
 
   &__img {
     max-width: 50%;
     margin-bottom: 1rem;
+    vertical-align: middle;
   }
 
   &__link {
     display: inline-block;
-    font-size: @default-font-size;
+    font-size: @medium-font-size;
     color: var(--color-white);
   }
 }
@@ -75,18 +104,22 @@
 //  background-size: 100rem;
   background: url(../images/bg-footer.png);
   background-position: center bottom;
-  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid var(--color-border);
+//  background-size: cover;
 
 }
 
 
 .footer-container {
-  min-height: 10vh;
+  min-height: 15vh;
   max-width: 86rem;
   margin: 0 auto;
-  background: url(../images/bg-footer.png);
-  background-position: center bottom;
-  background-size: cover;
+/*   background: url(../images/bg-footer.png);
+background-position: center bottom;
+background-size: cover; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,6 +128,11 @@
 
 .footer__contact {
   margin-bottom: 0.4rem;
+  font-size: @default-font-size;
+}
+
+.footer__promo {
+  font-size: @default-font-size;
 }
 
 /* .footer-wrapper {
