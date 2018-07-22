@@ -12,7 +12,24 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  height: 100%
+  height: 100%;
+
+  @media screen and (min-width: 1680px) {
+    font-size: 75%;
+  }
+  @media screen and (min-width: 1680px) and (max-height: 1000px) {
+    font-size: 62.5%;
+  }
+  @media screen and (min-width: 1680px) and (max-height: 850px) {
+    font-size: 56.25%;
+  }
+  @media screen and (min-width: 1680px) and (max-height: 750px) {
+    font-size: 50%;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -23,4 +40,11 @@ body {
   background-size: cover;
   height: 100%;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  body, html {
+    overflow: auto;
+    height: auto
+  }
 }
