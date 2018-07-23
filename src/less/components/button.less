@@ -22,16 +22,15 @@
 
     @media (max-width: 768px) {
 
-     // padding: 1.4rem 1.7rem;
+      padding: 1.1rem 2.5rem;
     }
 
     @media (max-width: 500px) {
 
-      padding: .4rem 1.7rem;
+      min-width: 65%;
     }
 
     @media screen and (min-width: 1680px) {
-      padding: 0.7rem 1.7rem;
       font-size: 1.7rem;
     }
   }
@@ -42,6 +41,11 @@
   padding: 1rem 1.7rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, .25);
   font-size: @medium-font-size;
+
+  @media screen and (max-width: 500px) {
+    font-size: 1.3rem;
+    min-width: 15rem;
+  }
 }
 
   &-mobile {
@@ -53,7 +57,12 @@
 }
 
 .btn + .btn {
+
   margin-left: 17px;
+  @media screen and (max-width: 500px) {
+    margin-left: auto;
+    margin-top: 2rem;
+  }
 }
 
 

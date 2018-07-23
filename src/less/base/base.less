@@ -14,26 +14,42 @@ html {
   font-size: 62.5%;
   height: 100%;
 
-  @media screen and (min-width: 1680px) {
+  /* @media screen and (min-width: 1680px) {
+    font-size: 75%;
+  } */
+  /* @media screen and (min-width: 1680px) and (max-height: 1000px) {
+    font-size: 62.5%;
+  } */
+  @media screen and (min-width: 1680px) and (min-height: 1040px) {
     font-size: 75%;
   }
-  @media screen and (min-width: 1680px) and (max-height: 1000px) {
-    font-size: 62.5%;
-  }
-  @media screen and (min-width: 1680px) and (max-height: 850px) {
+
+  @media screen and (min-width: 1680px) and (max-height: 950px) {
     font-size: 56.25%;
   }
   @media screen and (min-width: 1680px) and (max-height: 750px) {
     font-size: 50%;
   }
 
-  @media screen and (max-width: 768px) {
-    font-size: 75%;
+
+
+  @media screen and (max-width: 1680px) and (min-height: 800px) {
+    font-size: 68.75%;
   }
+
+
+  @media screen and (max-width: 1680px) and (max-height: 740px) {
+    font-size: 56.25%;
+  }
+
+
+  /* @media screen and (max-width: 768px) {
+    font-size: 75%;
+  } */
 }
 
 body {
-  line-height: 1.6;
+    line-height: 1.6;
   font-family: "Cambria";
   color: var(--color-white);
   background: url(../images/background1366.jpg) no-repeat center top;
