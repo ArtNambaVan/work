@@ -48,17 +48,17 @@ html {
     font-size: 75%;
   } */
 }
-@media screen and (min-width: 1680px) and (min-height: 1040px) {
+@media screen and (min-width: 1680px) and (min-height: 1040px) and (orientation: landscape) {
   html {
     font-size: 75%;
   }
 }
-@media screen and (min-width: 1680px) and (max-height: 950px) {
+@media screen and (min-width: 1680px) and (max-height: 950px) and (orientation: landscape) {
   html {
     font-size: 56.25%;
   }
 }
-@media screen and (min-width: 1680px) and (max-height: 750px) {
+@media screen and (min-width: 1680px) and (max-height: 750px) and (orientation: landscape) {
   html {
     font-size: 50%;
   }
@@ -71,6 +71,11 @@ html {
 @media screen and (max-width: 1680px) and (max-height: 740px) {
   html {
     font-size: 56.25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
   }
 }
 body {
@@ -104,6 +109,9 @@ body {
   border: 1px solid var(--color-white);
   padding: 0.4rem 1.7rem;
   font-size: 2rem;
+  /*     @media screen and (min-width: 1680px) {
+  font-size: 1.7rem;
+} */
 }
 @media (max-width: 768px) {
   .btn-transparent {
@@ -113,11 +121,6 @@ body {
 @media (max-width: 500px) {
   .btn-transparent {
     min-width: 65%;
-  }
-}
-@media screen and (min-width: 1680px) {
-  .btn-transparent {
-    font-size: 1.7rem;
   }
 }
 .btn-info {
