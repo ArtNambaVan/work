@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+
+    @media screen and (min-width: 1680px) and (min-height: 1040px) and (orientation: landscape) {
+        font-size: 75%;
+    }
+
+    @media screen and (min-width: 1680px) and (max-height: 950px) and (orientation: landscape) {
+        font-size: 56.25%;
+    }
+
+    @media screen and (min-width: 1680px) and (max-height: 750px) and (orientation: landscape) {
+        font-size: 50%;
+    }
+
+    @media screen and (max-width: 1680px) and (min-height: 800px) {
+        font-size: 68.75%;
+    }
+
+    @media screen and (max-width: 1680px) and (max-height: 740px) {
+        font-size: 56.25%;
+    }
+
+    @media screen and (max-width: 1680px) and (max-height: 600px) {
+        font-size: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    line-height: 1.6;
+    font-family: "Cambria";
+    color: var(--color-white);
+
+    height: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    body,
+    html {
+        overflow: auto;
+        height: auto;
+    }
+}
